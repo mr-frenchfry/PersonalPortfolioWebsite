@@ -1,0 +1,363 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+ }
+ 
+ body {
+     display: flex;
+     flex-direction: column;
+     background-color: #DFDACD;
+ }
+ 
+ main {
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .bubble {
+     background-color:#FEEFDE;
+     padding: 0.7em;
+     border: solid rgb(218,227,230,0.3) 2px;
+     box-shadow: 10px 10px 5px rgb(218,227,230,0.3);
+     border-radius: 0.5em;
+     width: fit-content;
+     font-size: 1.5em;
+     transform: translate(0.5em, -2.2em);
+     font-family: 'Courier New', Courier, monospace;
+     font-weight: 300 bolder;
+     position: absolute;
+     color: #383838;
+ }
+ 
+ .section {
+     background-color:#FEEFDE;
+     margin-top: 6%;
+     border-radius: 0.5em;
+     height: fit-content;
+     opacity: 0.9;
+     border-top: 1px solid rgba(92, 92, 92, 0.3);
+ }
+ 
+ .button button {
+     border: 1px solid rgba(92, 92, 92, 0.3);
+     color: #383838;
+     background-color:#FEEFDE;
+     width: 7em;
+     height: 2em;
+     box-shadow: 1px 1px rgba(92, 92, 92, 0.5);
+     text-decoration: none !important;
+     margin: 0.2em;
+     border-radius: 0.5em;
+ }
+ 
+ .button button:hover {
+     background-color:rgb(218,227,230,0.3); 
+ }
+ 
+ .button button:active {
+     background-color:rgb(218,227,230,0.3);
+     box-shadow: inset 1px 1px rgba(92, 92, 92, 0.5);
+ }
+
+
+ /* -- Nav Bar -- */
+ nav {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-3) 0;
+    margin: 2%;
+    margin-bottom: 0;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  /* Dropdown Button */
+.dropbtn {
+    background-color: #6E6D6E;;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5em;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #BEAC82;;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #DFDACD;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: rgb(218,227,230,.5);}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+ /* -- Header -- */
+ 
+ header {
+     display: flex;
+     height: fit-content;
+     align-items: center;
+     justify-content: center;
+     background-image: url("/Users/gabeprieto/Desktop/Code Projects/PersonalPortfolioWebsite/photos/backgroundDesign.png");
+     padding: 2em;
+     margin: 2%;
+ }
+ 
+ .headshot {
+     height: auto;
+     flex-shrink: 3;
+     opacity: 80%;
+     border-radius: 0.5em;
+ }
+ 
+ 
+ .greeting {
+     flex-direction: column;  
+     flex-wrap: wrap;
+     flex-shrink: 1;
+     text-align: center;
+     padding: 4%;
+ }
+ 
+ .greeting h1 {
+     color: white;
+     font-size: 400%;
+     background-color: #6E6D6E;
+     padding: 2%;
+     opacity: 80%;
+     border-radius: 0.3em;
+     font-family: 'Courier New', Courier, monospace;
+ }
+ 
+ .greeting h2 {
+     font-size: 270%;
+     margin-top: -0.5em;
+     font-family: 'Courier New', Courier, monospace;
+     color: #383838;
+ }
+
+ .greeting span {
+    position: relative;
+    display: inline-block;
+    animation: flip 5s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+ 
+ .link-logo, .email-logo, .git-logo {
+     height: 2.2em;
+     width: auto;
+     text-decoration: none;
+     padding: 0.4em;
+     
+ }
+ .link:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+.shrink-on-hover {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .shrink-on-hover:hover {
+    transform: scale(0.8);
+  }
+ 
+ 
+ /* -- About Me -- */
+ 
+ #text {
+     color: rgba(35, 35, 35, 1);
+     font-size: 1.2em;
+     font-weight: 500;
+     text-align: start;
+     padding: 2.3em 1em 1em 3.5em;
+     font-family: 'Courier New', Courier, monospace;
+ }
+ 
+
+ /* -- Projects -- */
+ 
+ .projectsdiv {
+     flex-direction: row;
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+ }
+ 
+ .projectsdiv div {
+     flex-direction: row;
+     flex-wrap: wrap;
+     border: solid 1px rgb(218,227,230,.3);
+     align-items: center;
+     margin: 1%;
+     margin-top: 4%;
+     text-align: center;
+     width: 30%; 
+     height: 95%;  
+     padding: 2%;
+     background-color: #6E6D6E;
+ }
+ 
+ #projects img {
+     max-width: 60%;
+     height: auto;
+     flex-shrink: 1;
+     margin: 1%;
+ }
+ 
+ .projectsdiv p {
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 0.9em;
+ }
+ 
+ h3 {
+     font-family: 'Courier New', Courier, monospace;
+     font-weight: 200;
+     font-size: medium;
+     color: white;
+ }
+ 
+ .list {
+     font-family: 'Courier New', Courier, monospace; 
+     font-weight: 300;
+ }
+ 
+
+ /* -- Skills -- */
+ 
+ .icons {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     align-items: center;
+     padding-top: 2em;
+ }
+ 
+ .icons img {
+     max-width: 13%;
+     height: auto;
+     margin: 2%;
+ }
+
+ 
+ /* Breakpoints */
+ 
+ @media only screen and (max-width: 500px) {
+ 
+     .greeting h1 {
+         font-size: 200%;
+     }
+     
+     .greeting h2 {
+         font-size: 135%;
+     }
+ 
+     header {
+         flex-direction: column;
+     }
+ 
+     .headshot {
+         max-width: 90%
+     }
+ 
+     .projectsdiv {
+         flex-direction: column;
+         margin-top: 1.5em;
+     }
+ 
+     .projectsdiv div {
+         width: 80%
+     }
+ 
+     #text {
+         font-size: 1em;
+     }
+ 
+     .bubble {
+         font-size: 0.9em;
+     }
+ 
+     .icons {
+         flex-direction: column;
+     }
+ 
+     .icons img{
+         max-width: 60%;
+ 
+     }
+ }
+ 
+ @media only screen and (min-width: 500px) and (max-width: 1000px) {
+      .headshot {
+         max-width: 60%
+     }
+     
+     .greeting h1 {
+         font-size: 250%;
+     }
+     
+     .greeting h2 {
+         font-size: 135%;
+     }
+ 
+ }
+ 
+ @media only screen and (min-width: 2500px) {
+     .headshot {
+         width: 50%;
+     }
+     
+     .greeting h1 {
+         font-size: 800%;
+     }
+     
+     .greeting h2 {
+         font-size: 340%;
+     }
+ 
+     #text {
+         font-size: 300%;
+     }
+ 
+     .bubble {
+         font-size: 3em;
+     }
+ 
+     h3 {
+         font-size: 2.3em;
+     }
+ 
+     .button button {
+         width: 10em;
+         height: em;
+         font-size: 2.3em;
+     }
+ }
