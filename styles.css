@@ -123,7 +123,7 @@ html {
      height: fit-content;
      align-items: center;
      justify-content: center;
-     background-image: url("/Users/gabeprieto/Desktop/Code Projects/PersonalPortfolioWebsite/photos/backgroundDesign.png");
+     background-image: url("photos/backgroundDesign.png");
      padding: 2em;
      margin: 2%;
  }
